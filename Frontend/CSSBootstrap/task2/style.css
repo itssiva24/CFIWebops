@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background: linear-gradient(to right, #11998e, #38ef7d);
+	height: 100vh;
+	font-family: 'Maven Pro', sans-serif;
+	color: #fff;
+}
+
+.container {
+	margin: 50px auto;
+	width: 75%;
+	height: 80%;
+	box-shadow: 5px 5px 100px 10px rgba(0, 0, 0, 0.507);
+	position: relative;
+}
+.container h1 {
+	/* margin: auto; */
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.container h1 a {
+	text-decoration: none;
+	color: #fff;
+	text-shadow: 1px 1px rgba(0, 0, 0, 0.507);
+	transition: 0.1s all;
+}
+.container h1 a:hover {
+	letter-spacing: 1.5px;
+}
+.box {
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	position: absolute;
+	animation: cornerAnimation 4s;
+	animation-iteration-count: infinite;
+}
+.text-container {
+	width: 75%;
+	margin: 50px auto;
+	padding: 3em;
+	background: #11998e;
+}
+ul {
+	padding: 2em;
+}
+ul li {
+	margin: 8px 0;
+	text-shadow: 1px 1px rgba(0, 0, 0, 0.507);
+	font-size: 1.5em;
+}
+
+ul li:hover {
+	list-style-type: square;
+	cursor: pointer;
+}
+.font2 {
+	font-family: 'Roboto Condensed';
+}
+@keyframes cornerAnimation {
+	0% {
+		top: 0;
+		left: 0;
+	}
+	25% {
+		top: 0;
+		left: calc(100% - 50px);
+	}
+	50% {
+		top: calc(100% - 50px);
+		left: calc(100% - 50px);
+	}
+	75% {
+		top: calc(100% - 50px);
+		left: 0;
+	}
+	100% {
+		top: 0;
+		left: 0;
+	}
+}

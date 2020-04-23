@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+        <header>
+            <nav>
+                <div class="logo"><a href="#">CFI</a></div>
+                <ul class="nav-list">
+                    <li class="nav-items"><a href="#" class="active">Home</a></li>
+                    <li class="nav-items"><a href="./task2/task2.html">Task 2</a></li>
+                    <li class="nav-items"><a href="#">About</a></li>
+                    <li class="nav-items"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="task2">
+                <p>Here is <span><a href="./task2/task2.html">Task 2</a></span></p> 
+            </div>
+        </header>
+        <div class="long-text-box ">
+            <p class="left border">orem dignissimos voluptate in vero blanditiis eius corrupti?</p>
+            <p class="right border">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex atque distinctio, consectetur dicta velit tempora exercitationem rerum culpa labore sint, neque perspiciatis harum? Dicta, architecto.</p>
+            <p class="left border">orem dignissimos voluptate in vero blanditiis eius corrupti?</p>
+            <p class="right border">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex atque distinctio, consectetur dicta velit tempora exercitationem rerum culpa labore sint, neque perspiciatis harum? Dicta, architecto.</p>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Roll Number</th>
+                    <th>Department</th>
+                    <th>Gender</th>
+                    <th>Number</th>
+                </tr>
+                <tr>
+                    <td>Alex</td>
+                    <td>AE18B001</td>
+                    <td>Aero</td>
+                    <td>Male</td>
+                    <td>123456780</td>
+                </tr>
+                <tr>
+                    <td>Alex</td>
+                    <td>AE18B001</td>
+                    <td>Aero</td>
+                    <td>Male</td>
+                    <td>123456780</td>
+                </tr>
+                <tr>
+                    <td>Alex</td>
+                    <td>AE18B001</td>
+                    <td>Aero</td>
+                    <td>Male</td>
+                    <td>123456780</td>
+                </tr>
+                <tr>
+                    <td>Alex</td>
+                    <td>AE18B001</td>
+                    <td>Aero</td>
+                    <td>Male</td>
+                    <td>123456780</td>
+                </tr>
+            </table>
+            <div class="hidden-none">
+                <button onclick="hideFunction()">Visibility</button>
+                <button onclick="displayNoneFunction()">Display</button>
+                <div class="border">
+                <p>This is the text-<span id="myDIV">"MAKE ME DISAPPEAR"</span> Cick the button above to see the difference.
+                </p>
+                <br>
+                <br>    
+                <p>This is the text-<span id="myDIV2">"MAKE ME INVISIBLE"</span> Cick the button above to see the difference.
+                </p>
+                </div>
+            </div>
+            <div class="boxes">
+                <div class="box first border">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo unde obcaecati voluptatem sapiente error ut.
+                </div>
+                <div class="box second border">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam hic vel blanditiis facilis libero quae?
+                </div>
+            </div>
+        </div>
+        <script>
+            function hideFunction(){
+                var x = document.getElementById("myDIV2");
+                if (x.style.visibility === "visible" || x.style.visibility === "" ) {
+                    x.style.visibility = "hidden";
+                } else if(x.style.visibility == "hidden") {
+                    x.style.visibility = "visible";
+                }
+             }
+            function displayNoneFunction(){
+                var x = document.getElementById("myDIV");
+                if (x.style.display === "none") {
+                    x.style.display = "inline-block";
+                } else {
+                    x.style.display = "none";
+                }
+             }
+        </script>
+</body>
+</html>

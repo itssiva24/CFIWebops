@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+:root {
+	--main-bg1-color: #2abe9a;
+	--main-bg2-color: #15a2a8;
+	--main-fg-color: #f9f9f9;
+	--main-text-color: #322b57;
+	--main-font: 'Open Sans';
+}
+
+.wrapper {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(to right, var(--main-bg1-color), var(--main-bg2-color));
+}
+
+.form-wrapper {
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--main-fg-color);
+	padding: 20px 50px 40px 50px;
+	border-radius: 15px;
+	box-shadow: 0px 10px 40px rgba(85, 85, 85, 0.527);
+}
+
+form {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+h1 {
+	text-align: center;
+	width: 100%;
+	font-weight: 500;
+	color: var(--main-bg2-color);
+	font-family: 'Montserrat';
+	font-size: 2.2em;
+}
+
+label {
+	font-size: 0.75em;
+	margin-bottom: 0.25em;
+	padding: 10px;
+	width: 30%;
+	font-family: var(--main-font);
+	color: var(--main-text-color);
+	font-weight: 600;
+}
+
+input {
+	box-sizing: border-box;
+	padding: 5px 10px;
+	/* margin-left: 10px; */
+	/* border-radius: 5px; */
+	outline: none;
+	border: none;
+	width: 60%;
+	background: #f3f3f3;
+	font-size: 0.8em;
+	color: #8c899b;
+	text-indent: 5px;
+	font-family: 'Open Sans';
+}
+input::placeholder {
+	font-size: 0.8em;
+	font-weight: 500;
+	font-family: 'Open Sans';
+	color: #bcbcbc;
+}
+
+.fullName,
+.email,
+.password,
+.confirm-password,
+.password-hint,
+.buttonContainer,
+.termsBox {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 10px;
+	/* flex-direction: column; */
+}
+#termsBox {
+	margin-left: 5%;
+	width: 5%;
+}
+.termsBox label {
+	/* display: inline; */
+	width: 85%;
+	padding: 0;
+}
+.termsBox {
+	margin-bottom: 5px;
+}
+
+.button,
+.disabledButton {
+	background-color: var(--main-bg2-color);
+	padding: 10px 25px;
+	color: #f9f9f9;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-size: 0.7em;
+	border-radius: 3px;
+}
+
+.disabledButton {
+	cursor: not-allowed;
+}
+.errorMessage {
+	color: red;
+	font-size: 0.65em;
+	padding: .5em 0 0 12em;
+	/* ;
+		display: relative; */
+}
+.errorMessageForHint {
+	color: red;
+	font-size: 0.65em;
+	padding: .5em 0 0 12em;
+	/* ;
+		display: relative; */
+}
+.errorMessageForTermsBox {
+	color: red;
+	font-size: 0.65em;
+	padding: 0 0 0 7.5em;
+	/* ;
+		display: relative; */
+}
+
+input.error {
+	border: 1px solid red;
+}
